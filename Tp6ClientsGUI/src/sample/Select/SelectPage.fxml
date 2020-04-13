@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Select.SelectPage">
+   <children>
+      <Label layoutX="226.0" layoutY="26.0" text="Select a Client">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="126.0" layoutY="130.0" text="Nom: " />
+      <Label layoutX="126.0" layoutY="250.0" text="Client :" />
+      <TextField fx:id="Nom" layoutX="226.0" layoutY="126.0" />
+      <Button fx:id="Find" layoutX="281.0" layoutY="167.0" mnemonicParsing="false" onAction="#Select" text="Find" />
+      <Button layoutX="33.0" layoutY="31.0" mnemonicParsing="false" text="Return" />
+      <TextArea fx:id="InfoField" layoutX="231.0" layoutY="242.0" prefHeight="132.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

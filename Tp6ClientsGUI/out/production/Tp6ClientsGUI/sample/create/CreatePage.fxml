@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.create.CreatePage">
+   <children>
+      <Label layoutX="227.0" layoutY="14.0" prefHeight="27.0" prefWidth="134.0" text="Create A Client">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="62.0" text="Nom :" />
+      <Label layoutX="154.0" layoutY="101.0" text="Prenom :" />
+      <Label layoutX="154.0" layoutY="144.0" text="Date de naissance :" />
+      <Label layoutX="154.0" layoutY="190.0" text="Adresse :" />
+      <Label layoutX="156.0" layoutY="232.0" text="Telephone :" />
+      <Label layoutX="153.0" layoutY="277.0" text="Email :" />
+      <Label layoutX="150.0" layoutY="322.0" text="Type de client" />
+      <TextField id="Nom" fx:id="Nom" layoutX="270.0" layoutY="58.0"/>
+      <TextField id="Prenom" fx:id="Prenom" layoutX="270.0" layoutY="97.0" />
+      <TextField id="Date_nais" fx:id="Date_nais" layoutX="270.0" layoutY="140.0" />
+      <TextField id="Adresse" fx:id="Adresse" layoutX="270.0" layoutY="186.0" />
+      <TextField id="Telephone" fx:id="Telephone" layoutX="270.0" layoutY="228.0" />
+      <TextField id="Email" fx:id="Email" layoutX="270.0" layoutY="273.0" />
+      <TextField id="Type" fx:id="Type" layoutX="270.0" layoutY="318.0" />
+      <Button layoutX="33.0" layoutY="29.0" mnemonicParsing="false" onAction="#returnHome" text="Return" />
+      <Button id="nom" layoutX="268.0" layoutY="361.0" mnemonicParsing="false" onAction="#create" text="Create" />
+
+   </children>
+</AnchorPane>
