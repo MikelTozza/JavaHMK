@@ -1,0 +1,31 @@
+package tp1java;
+
+import java.util.Scanner;
+
+public class Nombres {
+	
+	public static int somme_Diviseurs(int number) {
+		
+		int j = 0;
+
+        for(int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                j = j + i;
+            }
+        }
+        System.out.println("La somme des diviseurs est: ");
+		return j;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ui = new Scanner(System.in);
+        System.out.println("Entrez le numero : ");
+        int number = ui.nextInt();
+        System.out.println(somme_Diviseurs(number));
+        ui.close();
+        
+	}
+
+}

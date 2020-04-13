@@ -1,0 +1,17 @@
+package projet1;
+
+public class ma_premiere_classe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//for (int i=0; i<101;i++) {
+		//	System.out.println(i);
+		//}
+		 int number= 5;
+		 int fact= 1;
+		 for (int i=1;i<=number;i++){    
+		      number=number*i;  
+	}
+		 System.out.println("Factorial of 5 is :"+ number);  
+	}
+	}

@@ -1,0 +1,65 @@
+package tp1java;
+import java.util.*;
+
+public class texte {
+	
+	public static String findCarac(String chaine, Char carac, int x)
+    {
+        String answer = new String();
+        int count = 0;
+
+        if(x==0)
+        {
+            answer = "Ce caractere ne se trouve pas dans la phrase !";
+            return answer;
+        }
+        else
+        {
+            for(int i=0;i<=x;i++)
+            {
+                if(phrase.charAt(i)==carac)
+                {
+                    count++
+                }
+            }
+        }
+
+        if(count>0)
+        {
+            answer = "Le caractere " + x + " se trouve " + count + " fois dans la phrase!";
+            return answer;
+        }
+        else {
+            answer = "Ce caractere ne se trouve pas dans la phrase !";
+            return answer;
+        }
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+    }
+
+    public static void main(String[] args) {
+
+        Scanner ui = new Scanner(System.in);
+
+        System.out.println("Entrez la phrase a analyser : ");
+        String phrase = ui.nextLine();
+        int fin = phrase.lenght()-1;
+
+
+        System.out.println("Entrez un caractere a trouver : ");
+        char caracx = ui.nextLine().charAt(0);
+
+        System.out.println(findCarac(phrase,caracx,fin));
+
+        in.close();
+    }
+}

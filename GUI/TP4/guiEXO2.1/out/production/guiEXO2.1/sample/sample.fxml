@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane layoutX="39.0" layoutY="65.0" prefHeight="99.0" prefWidth="240.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutY="-8.0" text="Nom Du Personnage" />
+                <Label layoutX="14.0" layoutY="41.0" text="Saisir un nom: " />
+                <TextField id="textboxName" fx:id="textboxName" layoutX="110.0" layoutY="37.0" prefHeight="25.0" prefWidth="101.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="314.0" layoutY="240.0" prefHeight="99.0" prefWidth="240.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutY="-9.0" text="Couler de Cheveux Du Personnage" />
+                <Label layoutX="10.0" layoutY="41.0" text="Cheveux: " />
+                <ChoiceBox id="choiceBoxCheveux" fx:id="choiceBoxCheveux" layoutX="76.0" layoutY="38.0" prefWidth="150.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Blonde" />
+                        <String fx:value="Brown" />
+                        <String fx:value="Black" />
+                    </FXCollections>
+                </items>
+                </ChoiceBox>
+            </children>
+        </Pane>
+        <Pane layoutX="314.0" layoutY="65.0" prefHeight="99.0" prefWidth="240.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutY="-8.0" text="Sex Du Personnage" />
+                <Label layoutX="12.0" layoutY="41.0" text="Sexe: " />
+                <ChoiceBox id="choiceBoxSexe" fx:id="choiceBoxSexe" layoutX="58.0" layoutY="38.0" prefWidth="150.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="masculin" />
+                            <String fx:value="feminin" />
+                            <String fx:value="other" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </children>
+        </Pane>
+        <Pane layoutX="39.0" layoutY="240.0" prefHeight="99.0" prefWidth="240.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutY="-9.0" text="Taille Du Personnage" />
+                <Label layoutX="14.0" layoutY="41.0" text="Taille: " />
+                <TextField id="textboxTaille" fx:id="textboxTaille" layoutX="72.0" layoutY="38.0" prefHeight="25.0" prefWidth="101.0" />
+                <Label layoutX="192.0" layoutY="45.0" text="cm" />
+            </children>
+        </Pane>
+        <Pane layoutX="38.0" layoutY="174.0" prefHeight="51.0" prefWidth="517.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutY="-9.0" text="Age Du Personnage" />
+                <RadioButton fx:id="radioAge" layoutX="15.0" layoutY="17.0" mnemonicParsing="false" text="15 - 25 ans" />
+                <RadioButton fx:id="radioAge2" layoutX="385.0" layoutY="17.0" mnemonicParsing="false" text="+ de 50 ans" />
+                <RadioButton fx:id="radioAge3" layoutX="259.0" layoutY="17.0" mnemonicParsing="false" text="36-50 ans" />
+                <RadioButton fx:id="radioAge4" layoutX="133.0" layoutY="17.0" mnemonicParsing="false" text="26- 35 ans" />
+            </children>
+        </Pane>
+        <Button fx:id="okButton" layoutX="205.0" layoutY="355.0" mnemonicParsing="false" onAction="#okButtonClick" text="OK" />
+        <Button layoutX="334.0" layoutY="355.0" mnemonicParsing="false" text="Annuler" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,146 @@
+package tp1java;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class texte {
+	
+	public static String findCarac(String chaine, char carac, int x)
+    {
+		// find the number of caracter in a text
+        String answer = new String();
+        int count = 0;
+
+        if(x==0)
+        {
+            answer = "Ce caractere ne se trouve pas dans la phrase !";
+            return answer;
+        }
+        else
+        {
+            for(int i=0;i<=x;i++)
+            {
+                if(chaine.charAt(i)==carac)
+                {
+                    count++;
+                }
+            }
+        }
+
+        if(count>0)
+        {
+            answer = "Le caractere " +  carac + " se trouve " + count + " fois dans la phrase!";
+            return answer;
+        }
+        else {
+            answer = "Ce caractere ne se trouve pas dans la phrase !";
+            return answer;
+        }
+    }
+	
+	public static int countWords (String s) {
+		
+		int wordCount = 0;
+
+	    boolean word = false;
+	    int endOfLine = s.length() - 1;
+
+	    for (int i = 0; i < s.length(); i++) {
+	        // if the char is a letter, word = true.
+	        if (Character.isLetter(s.charAt(i)) && i != endOfLine) {
+	            word = true;
+	            // if char isn't a letter and there have been letters before,
+	            // counter goes up.
+	        } else if (!Character.isLetter(s.charAt(i)) && word) {
+	            wordCount++;
+	            word = false;
+	            // last word of String; if it doesn't end with a non letter, it
+	            // wouldn't count without this.
+	        } else if (Character.isLetter(s.charAt(i)) && i == endOfLine) {
+	            wordCount++;
+	        }
+	    }
+	    return wordCount;
+	    } 
+	
+	public static int tionFinder (String chaine, String suff) {
+        int count = 0;
+        
+        String words[] =  chaine.split(" "); //extract words from phrase
+        
+        //for every word
+        for(int i =0 ; i < words.length; i++) {
+        	if(words[i].endsWith("tion")) {
+        		count++;
+        	}
+        }
+        if (chaine.endsWith("tion")) {
+        	System.out.println("The words that finish with --tion-- are: " + count);
+        }
+        return count;
+	}
+	
+	public static int uppercaseFinder(String chaine) {
+		 int count =0;
+		 Pattern p = Pattern.compile("\\b[A-Z]{1,}");
+		 Matcher m = p.matcher(chaine);
+		 while(m.find()) {
+			count++;
+		 }
+		 System.out.println("The number of words with capitals: " + count);
+		 return count;
+	}
+
+	public static String encrypt (String chaine, int shift) {
+		if(shift>26) { // between 0-26
+			shift = shift%26;
+		}
+		else if(shift<0) { 
+			shift = (shift%26)+26;
+		}
+		String cipherText= "";
+		int length = chaine.length();
+		for (int i=0; i< chaine.length();i++ ) {
+			char ch = chaine.charAt(i);
+			if (Character.isLetter(ch)) {//check if char is a letter
+				if(Character.isLowerCase(ch)) {
+													//check if lowercase or uppercase
+				}
+				else fi (Character.isUpperCase(ch))
+				
+			}
+			else {
+				cipherText += ch;
+			}
+		
+		
+		
+		
+		return cipherText;
+	
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner ui = new Scanner(System.in);
+
+        System.out.println("Entrez la phrase a analyser : ");
+        String phrase = ui.nextLine();
+        int fin = phrase.length()-1;
+        String suff = "tion";
+
+
+        System.out.println("Entrez un caractere a trouver : ");
+        char caracx = ui.nextLine().charAt(0);
+
+        System.out.println(findCarac(phrase,caracx,fin));
+        System.out.println("");
+        System.out.println("The phrase/word has: "+ countWords(phrase) + " word(s)");
+        System.out.println("");
+        System.out.println(tionFinder(phrase,suff));
+        System.out.println(uppercaseFinder(phrase));
+        ui.close();
+	}
+
+}
+

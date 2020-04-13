@@ -1,0 +1,10 @@
+package projet1;
+
+public class ma_premiere_classe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ystem.out.print("Text to be printed");
+	}
+
+}

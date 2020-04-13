@@ -1,0 +1,32 @@
+package tp1java;
+
+import java.util.Scanner;
+
+public class Nombres {
+	
+	public static int somme_Diviseurs(int number) {
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ui = new Scanner(System.in);
+
+        System.out.println("Entrez le numero : ");
+        int number = ui.nextInt();
+        
+	}
+
+}

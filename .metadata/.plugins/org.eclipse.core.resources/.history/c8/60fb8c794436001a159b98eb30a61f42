@@ -1,0 +1,35 @@
+package projet1;
+
+public class ma_premiere_classe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//for (int i=0; i<101;i++) {
+		//	System.out.println(i);
+		//if (i==%5){
+		//i == "bottle";
+		//if (i==%7){
+		//i=="ding dong";
+		//}
+		
+//		 int number= 5;
+//		 int factorial= 1;
+//		 for (int i=1;i<=number;i++){    
+//		      factorial=factorial*i;  
+//	}
+//		 System.out.println("Factorial of"+ number+ " is :"+ factorial); 
+		
+		
+		for (int i=0; i<3;i++) {
+			if(i == 0) {
+				System.out.println("*");	
+			}
+			System.out.println(pyramide);
+		}
+		
+		
+		
+		
+		
+	}
+	}

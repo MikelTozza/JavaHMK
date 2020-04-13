@@ -1,0 +1,15 @@
+package projet1;
+
+public class ma_premiere_classe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//for (int i=0; i<101;i++) {
+		//	System.out.println(i);
+		//}
+		int a, b= 5;
+		 for(i=1;i<=a;i++){    
+		      fact=fact*i;  
+	}
+
+}
