@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Contrat.create.CreateConPage">
+   <children>
+      <Label layoutX="203.0" layoutY="20.0" text="Creation de contrat">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="87.0" text="Numero: " />
+      <Label layoutX="34.0" layoutY="201.0" text="Date: " />
+      <Label layoutX="32.0" layoutY="240.0" text="Duree:" />
+      <Label layoutX="28.0" layoutY="283.0" text="Adresse: " />
+      <Label layoutX="30.0" layoutY="326.0" text="Compteur:" />
+      <Label layoutX="305.0" layoutY="87.0" text="Remise: " />
+      <Label layoutX="305.0" layoutY="141.0" text="OIndex: " />
+      <Label layoutX="305.0" layoutY="192.0" text="NIndex: " />
+      <Label layoutX="305.0" layoutY="247.0" text="Puissance: " />
+      <Label layoutX="305.0" layoutY="308.0" text="tarif: " />
+      <TextField fx:id="Numero" layoutX="101.0" layoutY="88.0" />
+      <TextField fx:id="Date" layoutX="101.0" layoutY="197.0" />
+      <TextField fx:id="Duree" layoutX="101.0" layoutY="235.0" />
+      <TextField fx:id="Adresse" layoutX="101.0" layoutY="279.0" />
+      <TextField fx:id="Compteur" layoutX="101.0" layoutY="322.0" />
+      <TextField fx:id="Remise" layoutX="368.0" layoutY="88.0" />
+      <TextField fx:id="Oindex" layoutX="368.0" layoutY="146.0" />
+      <TextField fx:id="Nindex" layoutX="368.0" layoutY="193.0" />
+      <TextField fx:id="Puissance" layoutX="368.0" layoutY="248.0" />
+      <TextField fx:id="Tarif" layoutX="368.0" layoutY="304.0" />
+      <Button layoutX="34.0" layoutY="25.0" mnemonicParsing="false" onAction="#returnHome" text="Retour" />
+      <Button layoutX="264.0" layoutY="353.0" mnemonicParsing="false" onAction="#create" prefHeight="25.0" prefWidth="72.0" text="Create" />
+      <Label layoutX="33.0" layoutY="150.0" text="numeroCon: " />
+      <TextField fx:id="numeroContrat" layoutX="101.0" layoutY="146.0" />
+   </children>
+</AnchorPane>

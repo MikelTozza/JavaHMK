@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Contrat.update.ModificationContrat">
+   <children>
+      <Button layoutX="35.0" layoutY="34.0" mnemonicParsing="false" onAction="#returnHome" text="Retour" />
+      <Label layoutX="179.0" layoutY="29.0" text="Modification Du Contrat">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="93.0" text="Numero Contrat:" />
+      <TextField fx:id="contratSearch" layoutX="119.0" layoutY="89.0" prefHeight="25.0" prefWidth="71.0" />
+      <Button layoutX="212.0" layoutY="89.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Label fx:id="label1" layoutX="36.0" layoutY="157.0" text="Date" visible="false" />
+      <Label fx:id="label2" layoutX="32.0" layoutY="207.0" text="Duree" visible="false" />
+      <Label fx:id="label3" layoutX="27.0" layoutY="256.0" text="Adresse" visible="false" />
+      <Label fx:id="label4" layoutX="24.0" layoutY="308.0" text="Compteur" visible="false" />
+      <Label fx:id="label5" layoutX="28.0" layoutY="353.0" text="Remise" visible="false" />
+      <Label fx:id="label6" layoutX="292.0" layoutY="157.0" text="Oindex" visible="false" />
+      <Label fx:id="label7" layoutX="292.0" layoutY="206.0" text="Nindex" visible="false" />
+      <Label fx:id="label8" layoutX="292.0" layoutY="258.0" text="Puissance" visible="false" />
+      <Label fx:id="label9" layoutX="292.0" layoutY="303.0" text="Tarif" visible="false" />
+      <TextField fx:id="Date" layoutX="80.0" layoutY="153.0" prefHeight="25.0" prefWidth="97.0" visible="false" />
+      <TextField fx:id="Duree" layoutX="80.0" layoutY="203.0" prefHeight="25.0" prefWidth="97.0" visible="false" />
+      <TextField fx:id="Adresse" layoutX="80.0" layoutY="252.0" prefHeight="25.0" prefWidth="97.0" visible="false" />
+      <TextField fx:id="Compteur" layoutX="80.0" layoutY="304.0" prefHeight="25.0" prefWidth="97.0" visible="false" />
+      <TextField fx:id="Remise" layoutX="80.0" layoutY="349.0" prefHeight="25.0" prefWidth="97.0" visible="false" />
+      <TextField fx:id="Oindex" layoutX="349.0" layoutY="153.0" visible="false" />
+      <TextField fx:id="Nindex" layoutX="349.0" layoutY="202.0" visible="false" />
+      <TextField fx:id="Puissance" layoutX="349.0" layoutY="254.0" visible="false" />
+      <TextField fx:id="Tarif" layoutX="349.0" layoutY="299.0" visible="false" />
+      <Button fx:id="update" layoutX="398.0" layoutY="349.0" mnemonicParsing="false" onAction="#Update" text="Modifier" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Tarif.AjoutTarif">
+   <children>
+      <Label layoutX="227.0" layoutY="34.0" text="Ajout De Tarif">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="126.0" text="ID:" />
+      <Label layoutX="183.0" layoutY="192.0" text="Tarif:" />
+      <TextField fx:id="IdText" layoutX="246.0" layoutY="188.0" />
+      <TextField fx:id="TarifText" layoutX="246.0" layoutY="122.0" />
+      <Button layoutX="275.0" layoutY="275.0" mnemonicParsing="false" onAction="#Add" text="Add" />
+      <Button layoutX="41.0" layoutY="39.0" mnemonicParsing="false" onAction="#returnHome" text="Return" />
+   </children>
+</AnchorPane>

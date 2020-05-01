@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Facture.Facture">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="54.0" layoutX="332.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+        <Label layoutX="372.0" layoutY="18.0" text="Facture">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="228.0" text="Numero du Contrat: " />
+        <Label layoutX="42.0" layoutY="163.0" text="Nom du Client" />
+        <Label layoutX="39.0" layoutY="298.0" text="Detail de consommation:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="CompteurText" layoutX="177.0" layoutY="347.0" prefHeight="38.0" prefWidth="78.0" />
+        <TextArea fx:id="KWHText" layoutX="177.0" layoutY="397.0" prefHeight="38.0" prefWidth="78.0" />
+        <Label layoutX="39.0" layoutY="465.0" text="Detail Des Couts: ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="524.0" text="Total partiel: " />
+        <Label layoutX="46.0" layoutY="586.0" text="TPS: " />
+        <Label layoutX="44.0" layoutY="648.0" text="TVQ: " />
+        <Line endX="702.0" layoutX="100.0" layoutY="454.0" startX="-100.0" />
+        <Line endX="453.5" layoutX="349.0" layoutY="287.0" startX="-379.0" />
+        <TextArea fx:id="NumeroContratText" layoutX="171.0" layoutY="218.0" prefHeight="38.0" prefWidth="78.0" />
+        <TextArea fx:id="NomClientText" layoutX="171.0" layoutY="152.0" prefHeight="38.0" prefWidth="78.0" />
+        <TextArea fx:id="TotalPartielText" layoutX="244.0" layoutY="514.0" prefHeight="38.0" prefWidth="78.0" />
+        <TextArea fx:id="TPSText" layoutX="244.0" layoutY="577.0" prefHeight="38.0" prefWidth="78.0" />
+        <TextArea fx:id="TVQText" layoutX="244.0" layoutY="638.0" prefHeight="38.0" prefWidth="78.0" />
+        <Label layoutX="39.0" layoutY="715.0" text="TOTAL:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="TotalText" layoutX="167.0" layoutY="701.0" prefHeight="38.0" prefWidth="186.0" />
+        <Label layoutX="39.0" layoutY="357.0" text="Compteur:" />
+        <Label layoutX="39.0" layoutY="407.0" text="kWh:" />
+        <TextField fx:id="NumeroClientText" layoutX="41.0" layoutY="95.0" prefHeight="25.0" prefWidth="123.0" />
+        <Button layoutX="176.0" layoutY="95.0" mnemonicParsing="false" onAction="#populateTextbox" text="Rechercher" />
+        <Label layoutX="44.0" layoutY="72.0" text="Numero de contrat" />
+      <Label layoutX="387.0" layoutY="163.0" text="Prenom Du Client" />
+      <TextArea fx:id="PrenomClientText" layoutX="522.0" layoutY="152.0" prefHeight="38.0" prefWidth="78.0" />
+      <Label layoutX="73.0" layoutY="587.0" text="(no 11944 9775 RT0001) 5%">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="525.0" text="(kwh x jour) x tarif))" />
+      <Label layoutX="76.0" layoutY="648.0" text="(no 1000042605 TQ0020) 9/9975%">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="363.0" text="Date Du Contrat: " />
+      <TextArea fx:id="DateText" layoutX="472.0" layoutY="353.0" prefHeight="38.0" prefWidth="78.0" />
+      <Label layoutX="337.0" layoutY="413.0" text="Duree Du Contrat" />
+      <TextArea fx:id="DureeContratText" layoutX="472.0" layoutY="403.0" prefHeight="38.0" prefWidth="78.0" />
+      <Label layoutX="645.0" layoutY="363.0" text="Tarif: " />
+      <TextArea fx:id="TarifText" layoutX="685.0" layoutY="355.0" prefHeight="27.0" prefWidth="70.0" />
+      <Button layoutX="42.0" layoutY="19.0" mnemonicParsing="false" onAction="#returnHome" text="Return" />
+      <Button layoutX="260.0" layoutY="95.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+    </children>
+</AnchorPane>

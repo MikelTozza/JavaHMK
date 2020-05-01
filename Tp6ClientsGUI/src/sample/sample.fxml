@@ -1,19 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button layoutX="250.0" layoutY="118.0" mnemonicParsing="false" onAction="#createClientPage" text="Create Client" />
-      <Label layoutX="183.0" layoutY="14.0" prefHeight="35.0" prefWidth="235.0" text="CLIENT APPLICATION">
+      <Button layoutX="83.0" layoutY="95.0" mnemonicParsing="false" onAction="#createClientPage" prefHeight="25.0" prefWidth="156.0" text="Creation de client" />
+      <Label alignment="CENTER" layoutX="110.0" layoutY="28.0" prefHeight="35.0" prefWidth="101.0" text="Client" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Button layoutX="163.0" layoutY="173.0" mnemonicParsing="false" onAction="#selectClientPage" prefHeight="25.0" prefWidth="76.0" text="Select Client" />
+      <Button layoutX="83.0" layoutY="132.0" mnemonicParsing="false" onAction="#updateClientPage" prefHeight="25.0" prefWidth="156.0" text="Modification de client" />
+      <Button layoutX="83.0" layoutY="173.0" mnemonicParsing="false" onAction="#deleteClientPage" prefHeight="25.0" prefWidth="76.0" text="Delete Client" />
+      <Line endX="29.0" endY="290.0" layoutX="271.0" layoutY="110.0" startX="29.0" startY="-110.0" />
+      <Label alignment="CENTER" layoutX="405.0" layoutY="28.0" prefHeight="35.0" prefWidth="90.0" text="Contrat">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="250.0" layoutY="161.0" mnemonicParsing="false" onAction="#selectClientPage" text="Select Client" />
-      <Button layoutX="250.0" layoutY="209.0" mnemonicParsing="false" onAction="#updateClientPage" text="Update Client" />
-      <Button layoutX="250.0" layoutY="257.0" mnemonicParsing="false" onAction="#deleteClientPage" text="Delete Client" />
+      <Line endX="300.0" layoutX="300.0" layoutY="74.0" startX="-300.0" />
+      <Button layoutX="339.0" layoutY="95.0" mnemonicParsing="false" onAction="#createContratPage" prefHeight="25.0" prefWidth="156.0" text="Creation de contrat" />
+      <Button layoutX="339.0" layoutY="132.0" mnemonicParsing="false" onAction="#updateContratPage" prefHeight="25.0" prefWidth="156.0" text="Modification de contrat" />
+      <Button layoutX="339.0" layoutY="173.0" mnemonicParsing="false" onAction="#deleteContratPage" prefHeight="25.0" prefWidth="156.0" text="Suppression de contrat" />
+      <Line endX="199.0" layoutX="401.0" layoutY="220.0" startX="-100.0" />
+      <Label alignment="CENTER" layoutX="391.0" layoutY="231.0" text="Facturation">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="209.0" layoutX="391.0" layoutY="266.0" startX="-91.5" />
+      <Button layoutX="412.0" layoutY="285.0" mnemonicParsing="false" onAction="#facturePage" text="Facturation" />
+      <Line endX="100.0" layoutX="201.0" layoutY="220.0" startX="-201.0" />
+      <Line endX="61.5" layoutX="239.0" layoutY="266.0" startX="-239.0" />
+      <Label layoutX="135.0" layoutY="231.0" text="Aide">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="41.0" layoutY="289.0" prefHeight="92.0" prefWidth="237.0" text="Developper par:  Mikel Tozza&#10;&#10;version 1.0" />
+      <Line endX="-100.0" endY="123.5" layoutX="610.0" layoutY="96.0" startX="-100.0" startY="-21.5" />
+      <Button layoutX="522.0" layoutY="95.0" mnemonicParsing="false" onAction="#tarifPage" prefHeight="54.0" prefWidth="69.0" text="Mod Tarif" />
+      <Button layoutX="522.0" layoutY="159.0" mnemonicParsing="false" onAction="#tarifPage2" prefHeight="54.0" prefWidth="69.0" text="Ajout Tarif" />
    </children>
 </AnchorPane>

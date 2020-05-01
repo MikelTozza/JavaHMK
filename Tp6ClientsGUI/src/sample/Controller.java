@@ -17,8 +17,8 @@ public class Controller implements Initializable { //main page controller
     }
 
     public void createClientPage (javafx.event.ActionEvent E) throws IOException {
-        System.out.printf("You clicked create a client");
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("create/CreatePage.fxml"));
+        System.out.printf("You clicked populateTextbox a client");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Client/Create/CreatePage.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
         app_stage.setScene(home_page_scene);
@@ -27,7 +27,7 @@ public class Controller implements Initializable { //main page controller
 
     public void selectClientPage (javafx.event.ActionEvent E) throws IOException {
         System.out.printf("You clicked select a client");
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Select/SelectPage.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Client/Select/SelectPage.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
         app_stage.setScene(home_page_scene);
@@ -36,7 +36,7 @@ public class Controller implements Initializable { //main page controller
 
     public void updateClientPage (javafx.event.ActionEvent E) throws IOException {
         System.out.printf("You clicked update a client");
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Update/UpdatePage.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Client/Update/UpdatePage.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
         app_stage.setScene(home_page_scene);
@@ -45,10 +45,65 @@ public class Controller implements Initializable { //main page controller
 
     public void deleteClientPage (javafx.event.ActionEvent E) throws IOException {
         System.out.printf("You clicked delete a client");
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Delete/DeletePage.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Client/Delete/DeletePage.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
+
+    public void createContratPage (javafx.event.ActionEvent E) throws IOException {
+        System.out.printf("You clicked populateTextbox a contract");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Contrat/create/CreateConPage.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+
+    public void deleteContratPage (javafx.event.ActionEvent E) throws IOException {
+        System.out.printf("You clicked populateTextbox a contract");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Contrat/delete/SuppContrat.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+
+    public void updateContratPage (javafx.event.ActionEvent E) throws IOException {
+        System.out.printf("You clicked populateTextbox a contract");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Contrat/update/ModificationContrat.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+
+    public void facturePage (javafx.event.ActionEvent E) throws IOException {
+        System.out.printf("You clicked populateTextbox a contract");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Facture/Facture.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+
+    public void tarifPage (javafx.event.ActionEvent E) throws IOException {
+        System.out.printf("You clicked populateTextbox a contract");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Tarif/ModificationTarif.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+    public void tarifPage2 (javafx.event.ActionEvent E) throws IOException {
+        System.out.printf("You clicked populateTextbox a contract");
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("Tarif/AjoutTarif.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+
+
 }

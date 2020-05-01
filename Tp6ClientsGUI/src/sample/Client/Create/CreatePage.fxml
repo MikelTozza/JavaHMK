@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.create.CreatePage">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client.Create.CreatePage">
    <children>
       <Label layoutX="227.0" layoutY="14.0" prefHeight="27.0" prefWidth="134.0" text="Create A Client">
          <font>
@@ -17,7 +18,7 @@
       <Label layoutX="156.0" layoutY="232.0" text="Telephone :" />
       <Label layoutX="153.0" layoutY="277.0" text="Email :" />
       <Label layoutX="150.0" layoutY="322.0" text="Type de client" />
-      <TextField id="Nom" fx:id="Nom" layoutX="270.0" layoutY="58.0"/>
+      <TextField id="Nom" fx:id="Nom" layoutX="270.0" layoutY="58.0" />
       <TextField id="Prenom" fx:id="Prenom" layoutX="270.0" layoutY="97.0" />
       <TextField id="Date_nais" fx:id="Date_nais" layoutX="270.0" layoutY="140.0" />
       <TextField id="Adresse" fx:id="Adresse" layoutX="270.0" layoutY="186.0" />

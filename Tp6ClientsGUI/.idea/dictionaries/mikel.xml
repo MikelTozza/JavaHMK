@@ -2,10 +2,25 @@
   <dictionary name="mikel">
     <words>
       <w>adresse</w>
+      <w>ancien</w>
+      <w>calcul</w>
+      <w>codetarif</w>
+      <w>compteur</w>
+      <w>contrat</w>
+      <w>duree</w>
+      <w>facture</w>
       <w>nais</w>
+      <w>nindex</w>
+      <w>nouvel</w>
       <w>numero</w>
+      <w>oindex</w>
+      <w>partiel</w>
       <w>prenom</w>
+      <w>puissance</w>
+      <w>remise</w>
       <w>returnbutton</w>
+      <w>tarif</w>
+      <w>textbox</w>
     </words>
   </dictionary>
 </component>

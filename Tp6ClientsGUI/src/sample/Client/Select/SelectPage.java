@@ -1,12 +1,17 @@
-package sample.Select;
+package sample.Client.Select;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -20,6 +25,16 @@ public class SelectPage {
     @FXML Button Find;
     @FXML TextArea InfoField;
 
+    public void returnHome (javafx.event.ActionEvent E) throws IOException {
+        System.out.printf("You clicked back");
+        Parent home_page_parent = FXMLLoader.load(getClass().getClassLoader().getResource("sample/sample.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) E.getSource()).getScene().getWindow();
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+
+    }
+
     public void Select(ActionEvent actionEvent) {
         try {
             String url = "jdbc:mysql://localhost:3308/tp6";
@@ -28,7 +43,8 @@ public class SelectPage {
 
             String nom = Nom.getText();
 
-            String query = "SELECT * FROM clients WHERE nom ='"+ nom + "'";
+            String query = "SELECT * FROM clients WHERE nom = '" + nom +
+                    "' ";
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
